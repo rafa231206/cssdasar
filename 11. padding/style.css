@@ -1,0 +1,74 @@
+/* ========================================= */
+/*         UNIVERSAL SETTING FONT            */
+/* ========================================= */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* ========================================= */
+/*                JUDUL <h1>                 */
+/* ========================================= */
+h1 {
+    width: 150px;              /* Lebar kotak judul */
+    height: 50px;              /* Tinggi kotak judul */
+    text-align: center;        /* Posisi teks ke tengah secara horizontal */
+}
+
+
+/* ========================================= */
+/*               BORDER SEDERHANA            */
+/* ========================================= */
+.border {
+    border: 1px solid;         /* Garis tepi tipis dan solid (warna default hitam) */
+}
+
+
+/* ========================================= */
+/*            VARIASI PADDING                */
+/* ========================================= */
+
+/* === PADDING-1 === */
+/* Semua sisi (atas, kanan, bawah, kiri) = 40px */
+.padding-1 {
+    background-color: cyan;    /* Warna latar biru terang */
+    padding: 40px;
+}
+
+/* === PADDING-2 === */
+/* Atas & bawah = 20px, kiri & kanan = 50px */
+.padding-2 {
+    background-color: burlywood; /* Warna krem coklat */
+    padding: 20px 50px;
+}
+
+/* === PADDING-3 === */
+/* Atas = 5px, Kanan & kiri = 20px, Bawah = 50px */
+.padding-3 {
+    background-color: aquamarine; /* Warna hijau kebiruan cerah */
+    padding: 5px 20px 50px;
+}
+
+/* === PADDING-4 === */
+/* Atas = 5px, Kanan = 10px, Bawah = 20px, Kiri = 50px */
+.padding-4 {
+    background-color: cadetblue;  /* Warna biru kehijauan gelap */
+    padding: 5px 10px 20px 50px;
+}
+
+/*
+    CATATAN PENTING:
+
+    Format penulisan padding dengan beberapa nilai:
+
+    - 1 nilai  → semua sisi
+    - 2 nilai  → padding: vertical horizontal;
+                (atas & bawah, kiri & kanan)
+    - 3 nilai  → padding: top horizontal bottom;
+                (atas, kiri & kanan, bawah)
+    - 4 nilai  → padding: top right bottom left;
+
+    Istilah:
+    - Padding block   = atas & bawah
+    - Padding inline  = kiri & kanan
+*/

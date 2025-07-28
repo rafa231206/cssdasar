@@ -1,0 +1,14 @@
+/* Aturan untuk elemen paragraf <p> */
+p {
+    position: relative;            /* Mengatur posisi relatif terhadap posisi aslinya */
+    top: 100px;                    /* Menggeser elemen turun sejauh 100px dari posisi awalnya */
+    background-color: aqua;       /* Memberi warna latar belakang biru muda */
+}
+
+/* Aturan untuk elemen yang memiliki class "posisi-relative" */
+.posisi-relative {
+    position: relative;            /* Posisi elemen diatur relatif terhadap posisi awalnya */
+    left: 50px;                    /* Menggeser elemen ke kanan sejauh 50px */
+    top: 50px;                     /* Menggeser elemen turun sejauh 50px */
+    background-color: coral;      /* Memberi warna latar belakang oranye (coral) */
+}

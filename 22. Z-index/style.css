@@ -1,0 +1,21 @@
+/* Mengatur font default untuk seluruh halaman */
+body {
+    font-family: Arial;
+}
+
+/* Mengatur bagian header agar selalu tetap di atas halaman (sticky) */
+.header {
+    position: fixed;            /* Menempel di posisi tetap saat scroll */
+    top: 0px;                   /* Menempel di bagian atas */
+    left: 0px;                  /* Menempel di bagian kiri */
+    width: 100%;                /* Lebar penuh sepanjang layar */
+    background-color: coral;   /* Warna latar belakang header */
+    z-index: 3;                 /* Prioritas tampilan paling atas (menimpa elemen lain) */
+}
+
+/* Mengatur kontainer utama agar tidak tertutup header */
+.container {
+    position: relative;         /* Posisi relatif terhadap elemen normal */
+    top: 100px;                 /* Memberi jarak dari atas agar tidak tertutup header */
+    z-index: 2;                 /* Di bawah header, tetap bisa diatur tampilannya */
+}

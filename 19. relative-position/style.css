@@ -1,0 +1,12 @@
+/* Mengatur tampilan elemen paragraf <p> */
+p {       
+    background-color: aqua;     /* Memberi warna latar belakang biru muda pada elemen <p> */
+}
+
+/* Mengatur elemen yang memiliki class "posisi-absolute" */
+.posisi-absolute {
+    position: absolute;         /* Menempatkan elemen secara absolut terhadap elemen induk terdekat yang punya posisi relatif */
+    left: 50px;                 /* Menggeser elemen ke kanan sejauh 50px dari sisi kiri induknya */
+    top: 200px;                 /* Menggeser elemen ke bawah sejauh 200px dari sisi atas induknya */
+    background-color: coral;   /* Memberi warna latar belakang oranye pada elemen ini */
+}

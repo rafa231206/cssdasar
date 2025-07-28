@@ -1,0 +1,62 @@
+/* Mengatur seluruh halaman */
+body {
+    width: 90%;                    /* Lebar body 90% dari layar */
+    margin: 0 auto;                /* Pusatkan body di tengah */
+    font-family: Arial;           /* Font default */
+    box-sizing: border-box;       /* Menjadikan padding dan border masuk ke total width/height */
+}
+
+/* =================== HEADER =================== */
+.header {
+    text-align: center;           /* Menjadikan teks judul di tengah */
+}
+
+/* =================== KONTEN =================== */
+#content {
+    overflow: auto;               /* Menghindari float overflow, agar kontainer menyesuaikan tinggi */
+}
+
+/* =================== NAVIGASI, FEATURE, FOOTER =================== */
+#nav, #feature, #footer {
+    background-color: burlywood;  /* Warna latar coklat muda */
+    margin-top: 5px;              /* Jarak atas */
+    margin-bottom: 5px;           /* Jarak bawah */
+    padding: 10px;                /* Ruang dalam */
+    text-align: center;           /* Pusatkan teks */
+}
+
+/* =================== KOLOM =================== */
+.column1, .column2, .column3 {
+    background-color: burlywood; /* Warna latar setiap kolom */
+    width: 30%;                  /* Lebar masing-masing kolom */
+    margin-right: 1.5%;          /* Jarak kanan antar kolom */
+    margin-left: 1.5%;           /* Jarak kiri antar kolom */
+    padding: 0.66%;              /* Padding dalam kolom */
+    float: left;                 /* Agar sejajar horizontal */
+}
+
+/* Kolom pertama tanpa margin kiri */
+.column1 {
+    margin-left: 0px;
+}
+
+/* Kolom ketiga tanpa margin kanan */
+.column3 {
+    margin-right: 0px;
+}
+
+/* =================== JUDUL DI KONTEN =================== */
+#content h3 {
+    text-align: center;          /* Judul konten di tengah */
+}
+
+/* =================== GAMBAR DI FEATURE =================== */
+#feature img {
+    width: 30%;                  /* Gambar ditampilkan dengan lebar 30% dari kontainer */
+}
+
+/* =================== DAFTAR MENU =================== */
+li {
+    display: inline;             /* Menjadikan daftar sejajar horizontal */
+    padding: 5px;                /* Jarak antar item menu */
+}

@@ -1,0 +1,67 @@
+/* =============================================== */
+/*        FONT DEFAULT UNTUK SEMUA ELEMEN          */
+/* =============================================== */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* =============================================== */
+/*              STYLING DASAR UNTUK <span>         */
+/* =============================================== */
+span {
+    background-color: rgba(225, 200, 0, 0.5);  /* Warna latar semi-transparan kuning */
+    width: 100px;                              /* Lebar tetap */
+    height: 100px;                             /* Tinggi tetap */
+    text-align: center;                        /* Teks berada di tengah horizontal */
+    padding: 10px;                             /* Ruang dalam */
+    border: 1px solid;                         /* Garis tepi */
+}
+
+
+/* =============================================== */
+/*                  DISPLAY TYPE                   */
+/* =============================================== */
+
+/* === INLINE === */
+/* Default dari <span>: tidak bisa atur width/height */
+span.inline {
+    display: inline;
+}
+
+/* === BLOCK === */
+/* Mulai dari baris baru dan bisa atur ukuran */
+span.block {
+    display: block;
+}
+
+/* === INLINE-BLOCK === */
+/* Seperti inline (sebaris) tapi bisa atur ukuran */
+span.inline-block {
+    display: inline-block;
+}
+
+
+/* =============================================== */
+/*                  FLEXBOX CONTAINER              */
+/* =============================================== */
+.flex-container {
+    background-color: aqua;         /* Warna latar belakang container */
+    display: flex;                  /* Mengaktifkan Flexbox */
+    flex-wrap: wrap;               /* Item boleh turun ke baris berikutnya jika tidak muat */
+    height: 200px;                 /* Tinggi container */
+    padding: 10px;                 /* Padding container */
+    justify-content: center;       /* Isi difokuskan ke tengah secara horizontal */
+}
+
+
+/* =============================================== */
+/*               FLEX ITEM (ISI DALAM FLEXBOX)     */
+/* =============================================== */
+.flex-item {
+    background-color: azure;       /* Warna latar item */
+    display: flex;                 /* Jika ingin isi dalam item ditata dengan Flexbox */
+    width: 100px;
+    height: 100px;
+    margin: 10px;                  /* Jarak antar item */
+}

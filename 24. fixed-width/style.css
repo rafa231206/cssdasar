@@ -1,0 +1,66 @@
+/* Mengatur tampilan umum pada body */
+body {
+    width: 960px;                  /* Lebar total halaman */
+    margin: 0px auto;              /* Pusatkan halaman secara horizontal */
+    font-family: Arial;           /* Font default */
+}
+
+/* ================= HEADER ================= */
+
+/* Mengatur teks judul pada header */
+#header h1 {
+    text-align: center;           /* Judul berada di tengah */
+}
+
+/* ================= NAVIGASI, HIGHLIGHT, FOOTER ================= */
+
+/* Gaya umum untuk nav, highlight, dan footer */
+#nav, #highlight, #footer {
+    text-align: center;           /* Isi ditengah */
+    padding: 10px;                /* Ruang dalam */
+    background-color: #efefef;    /* Warna latar abu muda */
+    margin: 10px;                 /* Jarak antar elemen */
+}
+
+/* Menata daftar item navigasi agar sejajar horizontal */
+#nav li {
+    display: inline;              /* Menyusun item secara horizontal */
+    padding: 5px;                 /* Jarak antar item menu */
+}
+
+/* ================= HIGHLIGHT ================= */
+
+/* Menata gambar pada bagian highlight */
+#highlight img {
+    width: 20%;                   /* Ukuran gambar 20% dari kontainer */
+}
+
+/* ================= ARTIKEL ================= */
+
+/* Gaya untuk artikel */
+.article {
+    float: left;                  /* Menyusun artikel berdampingan */
+    background-color: #efefef;    /* Warna latar artikel */
+    width: 280px;                 /* Lebar kotak artikel */
+    height: 200px;                /* Tinggi tetap */
+    margin: 10px;                 /* Jarak antar artikel */
+    padding: 10px;                /* Ruang dalam artikel */
+}
+
+/* ================= KONTEN ================= */
+
+#content {
+    height: 100%;                 /* Tinggi penuh */
+    overflow: auto;               /* Scroll jika konten melebihi kontainer */
+}
+
+/* ================= KOLOM TAMBAHAN ================= */
+
+/* Kolom dengan latar biru muda */
+.column2 {
+    background-color: aliceblue;
+}
+
+.column3 .column1 {
+    background-color: antiquewhite;
+}

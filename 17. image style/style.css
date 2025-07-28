@@ -1,0 +1,46 @@
+h1 {
+    font-size: 35px; /* Mengatur ukuran huruf pada elemen h1 */
+    font-family: Arial, Helvetica, sans-serif; /* Mengatur jenis huruf pada elemen h1 */
+}
+
+div {
+    height: 500px; /* Mengatur tinggi elemen div */
+    margin: 10px; /* Memberi jarak luar (luar box) sebesar 10px */
+    border: 1px solid; /* Membuat garis tepi solid dengan ketebalan 1px */
+}
+
+/* Ukuran gambar besar */
+.img-large {
+    width: 300px;
+    height: 300px;
+}
+
+/* Ukuran gambar sedang */
+.img-medium {
+    width: 100px;
+    height: 100px;
+}
+
+/* Ukuran gambar kecil */
+.img-small {
+    width: 50px;
+    height: 50px;
+}
+
+/* Posisi gambar ke kanan */
+.align-right {
+    float: right; /* Mengapungkan elemen ke kanan */
+    margin-left: 10px; /* Jarak sebelah kiri */
+}
+
+/* Posisi gambar ke kiri */
+.align-left {
+    float: left; /* Mengapungkan elemen ke kiri */
+    margin-right: 10px; /* Jarak sebelah kanan */
+}
+
+/* Posisi gambar ke tengah */
+.align-center {
+    display: block; /* Menjadikan elemen block agar bisa diatur marginnya */
+    margin: 0px auto; /* Rata tengah secara horizontal */
+}

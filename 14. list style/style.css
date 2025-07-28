@@ -1,0 +1,59 @@
+/* Mengatur font default untuk seluruh elemen di halaman */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mengatur tampilan judul (h1) */
+h1 {
+    font-size: 25px;      /* Ukuran teks judul */
+    color: crimson;       /* Warna teks judul */
+}
+
+/* Mengatur tampilan ordered list (<ol>) default */
+ol {
+    /*
+        list-style-type mengatur jenis penomoran pada list terurut:
+        - decimal: 1, 2, 3, ...
+        - lower-roman: i, ii, iii, ...
+        - upper-roman: I, II, III, ...
+        - lower-latin: a, b, c, ...
+        - upper-latin: A, B, C, ...
+        (Catatan: hanya satu bisa aktif, lainnya dikomentari)
+    */
+    list-style-type: decimal;
+}
+
+/* Mengatur tampilan unordered list (<ul>) */
+ul {
+    width: 400px; /* Lebar maksimum daftar tidak terurut */
+}
+
+/* Mengatur setiap item pada unordered list */
+ul li {
+    margin: 10px; /* Jarak antar item list */
+
+    /*
+        list-style-position menentukan posisi tanda bullet atau nomor:
+        - inside: bullet sejajar dengan teks, ikut indentasi
+        - outside: bullet di luar teks, teks tetap rata kiri
+    */
+    list-style-position: inside;
+}
+
+/* Kelas khusus untuk ol dengan gaya list singkat */
+ol.singkat {
+    /*
+        lower-greek: α, β, γ, ... (huruf Yunani kecil)
+        inside: bullet/angka sejajar dengan teks
+    */
+    list-style: lower-greek inside;
+}
+
+/* Kelas khusus untuk ul dengan bullet lingkaran kecil */
+ul.singkat {
+    /*
+        circle: lingkaran kosong (◯)
+        inside: bullet sejajar dengan teks
+    */
+    list-style: circle inside;
+}

@@ -1,0 +1,90 @@
+/* =================== STYLE DASAR =================== */
+body {
+    width: 90%;                /* Lebar body 90% dari lebar layar */
+    margin: 0 auto;            /* Posisi body berada di tengah layar */
+    font-family: Arial;        /* Font yang digunakan Arial */
+}
+
+/* Judul utama */
+h1 {
+    text-align: center;        /* Posisi teks judul di tengah */
+}
+
+/* =================== NAVIGASI DAN FOOTER =================== */
+#nav, #footer {
+    background-color: #efefef; /* Warna latar abu terang */
+    padding: 10px;             /* Ruang dalam elemen */
+    margin: 5px;               /* Jarak luar elemen */
+    text-align: center;        /* Pusatkan isi elemen */
+}
+
+/* Navigasi berbentuk horizontal */
+li {
+    display: inline;           /* Menjadikan list horizontal */
+    padding: 5px;              /* Jarak antar item list */
+}
+
+/* =================== GRID CONTAINER =================== */
+.grid-container {
+    display: grid;                             /* Aktifkan mode grid */
+    
+    /* grid-template-columns menentukan pembagian kolom.
+       Berikut 3 opsi yang dikomentari:
+    */
+
+    /* justify-content: space-evenly; */ 
+    /* Jika diaktifkan, setiap kolom diberi jarak yang merata di kiri, tengah, dan kanan container. */
+
+    /* justify-content: space-between; */
+    /* Jika diaktifkan, elemen pertama di kiri, elemen terakhir di kanan, sisanya tersebar rata di antaranya. */
+
+    /* justify-content: space-around; */
+    /* Jika diaktifkan, setiap elemen diberi ruang di kiri dan kanan, namun ruang luar lebih kecil dari ruang di tengah. */
+
+    grid-template-columns: 10% 30% auto;
+    /* Menentukan lebar kolom:
+       - Kolom 1: 10%
+       - Kolom 2: 30%
+       - Kolom 3: sisanya otomatis menyesuaikan */
+
+    /* Alternatif yang dikomentari:
+    grid-template-columns: 200px 200px auto; 
+    Jika diaktifkan, kolom 1 dan 2 masing-masing 200px, kolom 3 menyesuaikan sisa ruang.
+    */
+
+    grid-template-rows: 100px 200px auto;
+    /* Menentukan tinggi baris:
+       - Baris 1: 100px
+       - Baris 2: 200px
+       - Baris 3 dan seterusnya: otomatis */
+
+    gap: 10px 10px;                         /* Jarak antar kolom dan baris (horizontal dan vertikal) */
+    margin: 1%;                             /* Margin di sekeliling grid */
+    background-color: #efefef;              /* Warna latar belakang grid container */
+}
+
+/* =================== ITEM DI DALAM GRID =================== */
+.grid-item {
+    background-color: antiquewhite;         /* Warna latar item */
+    border: 1px solid grey;                 /* Garis tepi item */
+    text-align: center;                     /* Teks di tengah */
+    padding: 20px;                          /* Ruang dalam item */
+}
+
+/* Item 1 menggabungkan kolom 1 dan 2 */
+.item1 {
+    grid-column-start: 1;                   /* Mulai dari kolom ke-1 */
+    grid-column-end: 3;                     /* Berakhir sebelum kolom ke-3 (artinya mencakup kolom 1 & 2) */
+}
+
+/* Item 3 juga menggabungkan kolom 1 dan 2 */
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Item 5 memanjang dari baris 3 sampai baris 4 */
+.item5 {
+    grid-row-start: 3;                      /* Mulai dari baris ke-3 */
+    grid-row-end: 5;                        /* Berakhir sebelum baris ke-5 (artinya mencakup baris 3 & 4) */
+}

@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dasar-Dasar CSS - Materi Lengkap</title>
+    <meta name="description" content="Dasar-Dasar CSS, CSS, dan kontak di sini.">
+    <meta name="keywords" content="Dasar-Dasar CSS, CSS, belajar, programer">
+    <meta name="author" content="Raihan Fahrel Akbar">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Favicon (gunakan ikon yang sama atau buat baru untuk CSS) -->
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Dasar-Dasar CSS">
+    <meta property="og:description" content="Temukan informasi Dasar-Dasar CSS di sini.">
+    <meta property="og:image" content="https://rafa231206.github.io/htmldasar/img/quality_restoration_20250330050655089.jpg">
+    <meta property="og:url" content="https://rafa231206.github.io/cssdasar/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dasar-Dasar CSS">
+    <meta name="twitter:description" content="Temukan informasi, media sosial, dan kontak Raihan Fahrel Akbar (Rafa_2312) di sini.">
+    <meta name="twitter:image" content="https://rafa231206.github.io/htmldasar/img/quality_restoration_20250330050655089.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="main-title"><i class="fas fa-paint-brush"></i> Dasar-Dasar CSS</h1>
+            <p class="tagline" style="margin: 0.625rem auto;" >Panduan lengkap untuk memahami dasar-dasar Cascading Style Sheets.</p>
+            <div class="header-decoration"></div>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h2 class="section-title">Daftar Isi</h2>
+        <section class="accordion-wrapper" aria-label="Daftar Materi Pembelajaran">
+
+            <!-- Bagian 1: Pendahuluan CSS -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-info-circle icon-prefix"></i>1. Pendahuluan CSS <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Apa itu CSS? <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mendeskripsikan presentasi dokumen yang ditulis dalam bahasa markup seperti HTML. CSS memungkinkan Anda mengontrol tampilan dan tata letak halaman web, termasuk warna, font, spasi, dan posisi elemen.</p>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Cara Menulis CSS <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Ada tiga cara utama untuk menambahkan CSS ke dokumen HTML:</p>
+                            <ul>
+                                <li><b>Inline CSS:</b> Menulis gaya langsung di dalam tag HTML menggunakan atribut <code>style</code>.</li>
+                                <li><b>Internal CSS:</b> Menulis gaya di dalam tag <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code> dokumen HTML.</li>
+                                <li><b>External CSS:</b> Menulis gaya dalam file <code>.css</code> terpisah dan menautkannya ke dokumen HTML menggunakan tag <code>&lt;link&gt;</code>. Ini adalah metode yang paling direkomendasikan untuk proyek besar.</li>
+                            </ul>
+                            <pre><code>&lt;!-- Inline CSS --&gt;
+&lt;p style="color: blue; font-size: 16px;"&gt;Teks biru.&lt;/p&gt;
+
+&lt;!-- Internal CSS (di dalam &lt;head&gt;) --&gt;
+&lt;style&gt;
+    h1 {
+        color: brown;
+    }
+&lt;/style&gt;
+
+&lt;!-- External CSS (di dalam &lt;head&gt;) --&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                            <a href="1. pembagian css/CSS Inline.html" target="_blank" class="original-file-link">Lihat file asli: CSS Inline.html</a>
+                            <a href="1. pembagian css/CSS Internal.html" target="_blank" class="original-file-link">Lihat file asli: CSS Internal.html</a>
+                            <a href="1. pembagian css/CSS eksternal.html" target="_blank" class="original-file-link">Lihat file asli: CSS eksternal.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 2: CSS Selector -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-mouse-pointer icon-prefix"></i>2. CSS Selector <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Selector CSS digunakan untuk "menemukan" (atau memilih) elemen HTML yang ingin Anda gayakan. Berikut adalah beberapa jenis selector umum:</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Universal Selector (<code class="keyword">*</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih semua elemen HTML di halaman.</p>
+                            <pre><code>* {
+    font-family: 'Arial';
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Type Selector (<code class="keyword">h1</code>, <code class="keyword">p</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih semua elemen dengan nama tag tertentu.</p>
+                            <pre><code>h1 {
+    color: chocolate;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Class Selector (<code class="keyword">.nama-kelas</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih semua elemen dengan atribut <code>class</code> tertentu. Dapat digunakan bersama nama tag (misalnya <code>li.sarapan</code>).</p>
+                            <pre><code>.sarapan {
+    color: darkgoldenrod;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">ID Selector (<code class="keyword">#nama-id</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih elemen dengan atribut <code>id</code> tertentu. ID harus unik dalam satu halaman.</p>
+                            <pre><code>#makan_siang {
+    color: darkgreen;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Child Selector (<code class="keyword">parent > child</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih elemen yang merupakan anak langsung dari elemen lain.</p>
+                            <pre><code>p > b {
+    color: darkorange;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Descendant Selector (<code class="keyword">ancestor descendant</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih elemen yang merupakan turunan dari elemen lain (tidak harus anak langsung).</p>
+                            <pre><code>p b {
+    color: blue;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Adjacent Sibling Selector (<code class="keyword">element + element</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih elemen yang langsung mengikuti elemen lain sebagai saudara.</p>
+                            <pre><code>p + h2 {
+    color: deeppink;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">General Sibling Selector (<code class="keyword">element ~ element</code>) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memilih semua elemen yang mengikuti elemen lain sebagai saudara (tidak harus langsung).</p>
+                            <pre><code>h2 ~ p {
+    font-family: 'Times New Roman';
+}</code></pre>
+                            <a href="2. CSS selector/index.html" target="_blank" class="original-file-link">Lihat file asli: 2. CSS selector/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 3: CSS Cascade -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-sitemap icon-prefix"></i>3. CSS Cascade <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Cascade adalah algoritma yang menentukan bagaimana browser memutuskan nilai properti CSS mana yang akan diterapkan ketika ada beberapa aturan yang bertentangan untuk elemen yang sama. Prioritas ditentukan oleh:</p>
+                    <ul>
+                        <li><b>Origin:</b> Gaya browser, gaya pengguna, gaya penulis.</li>
+                        <li><b>Specificity:</b> Seberapa spesifik selector (ID > Class > Tag).</li>
+                        <li><b>Order:</b> Aturan yang ditulis terakhir akan menang jika spesifisitasnya sama.</li>
+                        <li><b>!important:</b> Mengesampingkan semua aturan lain kecuali aturan <code>!important</code> lain dengan spesifisitas lebih tinggi atau aturan <code>!important</code> dari gaya pengguna.</li>
+                    </ul>
+                    <pre><code>/* Order: Aturan terakhir menang */
+i { color: green; }
+i { color: red; } /* Ini yang akan diterapkan */
+
+/* Specificity: ID lebih kuat dari tag */
+p { font-size: 100%; }
+p#pendahuluan { font-size: 75%; } /* Ini yang akan diterapkan */
+
+/* !important: Mengesampingkan sebagian besar aturan */
+b { color: pink; }
+p b { color: brown !important; } /* Ini akan diterapkan */
+p b { color: blue; } /* Ini diabaikan */</code></pre>
+                    <a href="3. CSS cascade/index.html" target="_blank" class="original-file-link">Lihat file asli: 3. CSS cascade/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 4: CSS Inheritance -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-code-branch icon-prefix"></i>4. CSS Inheritance <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Inheritance (pewarisan) adalah mekanisme di mana beberapa properti CSS yang diterapkan pada elemen induk secara otomatis diwarisi oleh elemen anaknya. Contoh properti yang diwarisi adalah <code>font-family</code>, <code>color</code>, dan <code>text-align</code>.</p>
+                    <p>Anda juga bisa secara eksplisit mewarisi nilai properti dari induk menggunakan kata kunci <code>inherit</code>.</p>
+                    <pre><code>body {
+    font-family: Arial;
+    color: darkslategrey;
+    padding: 10px;
+}
+
+.intro {
+    border: 1px solid #665544;
+    padding: inherit; /* Akan mewarisi padding dari body (10px) */
+}</code></pre>
+                    <a href="4. CSS Inheritance/index.html" target="_blank" class="original-file-link">Lihat file asli: 4. CSS Inheritance/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 5: CSS Color -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-palette icon-prefix"></i>5. CSS Color <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>CSS menyediakan berbagai cara untuk menentukan warna, baik untuk teks (<code>color</code>) maupun latar belakang (<code>background-color</code>).</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Nama Warna (Color Names) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menggunakan nama warna standar seperti <code>red</code>, <code>blue</code>, <code>darkcyan</code>, dll.</p>
+                            <pre><code>h1 {
+    color: darkcyan;
+    background-color: darkkhaki;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Hexadecimal (HEX) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menggunakan kode heksadesimal 6 digit (<code>#RRGGBB</code>) atau 3 digit (<code>#RGB</code>).</p>
+                            <pre><code>h2 {
+    color: #ffffff; /* Putih */
+    background-color: #efefef; /* Abu muda */
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">RGB (Red, Green, Blue) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menggunakan fungsi <code>rgb(red, green, blue)</code> dengan nilai 0-255 untuk setiap komponen warna.</p>
+                            <pre><code>p {
+    color: rgb(100, 100, 90);
+    background-color: rgb(104, 228, 236);
+}</code></pre>
+                            <a href="5. CSS color/warna/index.html" target="_blank" class="original-file-link">Lihat file asli: 5. CSS color/warna/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">RGBA (Red, Green, Blue, Alpha) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Sama seperti RGB, tetapi dengan tambahan komponen <code>alpha</code> (transparansi) dari 0 (sepenuhnya transparan) hingga 1 (sepenuhnya buram).</p>
+                            <pre><code>h2 {
+    background-color: rgba(255, 0, 119, 0.5); /* Pink 50% transparan */
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">HSL (Hue, Saturation, Lightness) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menggunakan fungsi <code>hsl(hue, saturation, lightness)</code>. Hue adalah sudut pada roda warna (0-360), saturation dan lightness adalah persentase (0-100%).</p>
+                            <pre><code>p.paragraf1 {
+    background-color: hsl(150, 50%, 25%); /* Hijau kebiruan gelap */
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">HSLA (Hue, Saturation, Lightness, Alpha) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Sama seperti HSL, tetapi dengan tambahan komponen <code>alpha</code> (transparansi).</p>
+                            <pre><code>p.paragraf2 {
+    background-color: hsla(150, 50%, 50%, 0.5); /* Hijau terang 50% transparan */
+}</code></pre>
+                            <a href="6. CSS color Alpha/index.html" target="_blank" class="original-file-link">Lihat file asli: 6. CSS color Alpha/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 6: CSS Text -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-font icon-prefix"></i>6. CSS Text <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti CSS Text digunakan untuk mengatur tampilan teks, seperti font, ukuran, berat, perataan, dan efek lainnya.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Font Properties <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <ul>
+                                <li><code>font-family</code>: Jenis font (misalnya 'Arial', 'Georgia').</li>
+                                <li><code>font-size</code>: Ukuran teks (misalnya <code>16px</code>, <code>1.2em</code>, <code>xx-large</code>).</li>
+                                <li><code>font-weight</code>: Ketebalan teks (misalnya <code>normal</code>, <code>bold</code>, <code>600</code>).</li>
+                                <li><code>font-style</code>: Gaya teks (misalnya <code>normal</code>, <code>italic</code>).</li>
+                            </ul>
+                            <pre><code>h1 {
+    font-family: Georgia;
+    font-size: xx-large;
+    font-weight: normal;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Text Alignment & Transformation <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <ul>
+                                <li><code>text-align</code>: Perataan teks (<code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>).</li>
+                                <li><code>text-transform</code>: Mengubah kapitalisasi teks (<code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code>).</li>
+                                <li><code>text-decoration</code>: Menambahkan atau menghapus dekorasi teks (<code>underline</code>, <code>none</code>).</li>
+                            </ul>
+                            <pre><code>h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.credit {
+    text-decoration: underline;
+    text-transform: capitalize;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Spacing & Shadow <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <ul>
+                                <li><code>word-spacing</code>: Jarak antar kata.</li>
+                                <li><code>letter-spacing</code>: Jarak antar huruf.</li>
+                                <li><code>text-shadow</code>: Menambahkan bayangan pada teks.</li>
+                            </ul>
+                            <pre><code>h1 {
+    text-shadow: 10px 5px 5px black;
+    word-spacing: 0.5em;
+    letter-spacing: 5px;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Link States <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Mengatur gaya tautan berdasarkan statusnya (belum dikunjungi, sudah dikunjungi, hover, aktif).</p>
+                            <ul>
+                                <li><code>:link</code>: Tautan yang belum dikunjungi.</li>
+                                <li><code>:visited</code>: Tautan yang sudah dikunjungi.</li>
+                                <li><code>:hover</code>: Saat kursor diarahkan ke tautan.</li>
+                                <li><code>:active</code>: Saat tautan diklik.</li>
+                            </ul>
+                            <pre><code>a.tautan:link { color: rgb(75, 20, 255); }
+a.tautan:visited { color: darkgreen; }
+a.tautan:hover { color: deeppink; }
+a.tautan:active { color: darkcyan; }</code></pre>
+                            <a href="7. CSS Text/index.html" target="_blank" class="original-file-link">Lihat file asli: 7. CSS Text/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 7: CSS Box Model -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-box-open icon-prefix"></i>7. CSS Box Model <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Setiap elemen HTML dianggap sebagai kotak. Model kotak CSS (CSS Box Model) menjelaskan bagaimana elemen-elemen ini dirender di browser, termasuk konten, padding, border, dan margin.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Komponen Box Model <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <ul>
+                                <li><b>Content:</b> Area tempat konten sebenarnya (teks, gambar) berada.</li>
+                                <li><b>Padding:</b> Ruang transparan di sekitar konten, di dalam border.</li>
+                                <li><b>Border:</b> Garis di sekitar padding dan konten.</li>
+                                <li><b>Margin:</b> Ruang transparan di luar border, memisahkan elemen dari elemen lain.</li>
+                            </ul>
+                            <pre><code>.content {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border: 20px solid red;
+    margin: 20px;
+}</code></pre>
+                            <a href="9. box model/index.html" target="_blank" class="original-file-link">Lihat file asli: 9. box model/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Properti Box Sizing <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Properti <code>box-sizing</code> menentukan bagaimana <code>width</code> dan <code>height</code> elemen dihitung:</p>
+                            <ul>
+                                <li><code>content-box</code> (default): <code>width</code> dan <code>height</code> hanya mencakup konten. Padding dan border ditambahkan di luar ukuran ini.</li>
+                                <li><code>border-box</code>: <code>width</code> dan <code>height</code> mencakup konten, padding, dan border. Ini lebih intuitif untuk tata letak.</li>
+                            </ul>
+                            <pre><code>* {
+    box-sizing: border-box;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Width & Height <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Mengatur lebar dan tinggi elemen. Bisa dalam piksel (<code>px</code>), persentase (<code>%</code>), atau unit lainnya.</p>
+                            <ul>
+                                <li><code>min-width</code> / <code>max-width</code>: Lebar minimum/maksimum.</li>
+                                <li><code>min-height</code> / <code>max-height</code>: Tinggi minimum/maksimum.</li>
+                                <li><code>fit-content</code>: Menyesuaikan ukuran dengan konten.</li>
+                            </ul>
+                            <pre><code>.box1 {
+    height: 100px;
+    width: 300px;
+}
+td.deskripsi {
+    min-width: 450px;
+    max-width: 500px;
+}
+div.box4 {
+    width: fit-content;
+    height: fit-content;
+}</code></pre>
+                            <a href="8. box/index.html" target="_blank" class="original-file-link">Lihat file asli: 8. box/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Overflow <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Mengontrol apa yang terjadi ketika konten elemen terlalu besar untuk muat di dalam kotak elemen.</p>
+                            <ul>
+                                <li><code>visible</code> (default): Konten akan meluap keluar dari kotak.</li>
+                                <li><code>hidden</code>: Konten yang meluap akan dipotong dan disembunyikan.</li>
+                                <li><code>scroll</code>: Scrollbar akan ditambahkan untuk melihat konten yang meluap.</li>
+                                <li><code>auto</code>: Scrollbar akan ditambahkan hanya jika diperlukan.</li>
+                            </ul>
+                            <pre><code>p.satu {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+}
+p.dua {
+    height: 100px;
+    width: 200px;
+    overflow: scroll;
+}</code></pre>
+                            <a href="0. Latihan CSS/Latihan 3/index.html" target="_blank" class="original-file-link">Lihat file asli: 0. Latihan CSS/Latihan 3/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 8: CSS Border -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-border-all icon-prefix"></i>8. CSS Border <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti border digunakan untuk mengatur garis tepi di sekitar elemen HTML.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Border Style <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menentukan jenis garis tepi (<code>solid</code>, <code>dotted</code>, <code>dashed</code>, <code>double</code>, dll.).</p>
+                            <pre><code>.border1 {
+    border: 2px solid brown;
+}
+#atas-solid {
+    border-top-style: solid;
+}
+#kiri-double {
+    border-left-style: double;
+}
+#bawah-dotted {
+    border-bottom-style: dotted;
+}
+#kanan-dashed {
+    border-right-style: dashed;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Border Width <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menentukan ketebalan garis tepi.</p>
+                            <pre><code>.border2 {
+    border-width: 20px; /* Semua sisi 20px */
+}
+.border3 {
+    border-width: 20px 5px; /* Vertikal 20px, Horizontal 5px */
+}
+.border4 {
+    border-width: 5px 10px 15px 20px; /* Top, Right, Bottom, Left */
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Border Color <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menentukan warna garis tepi.</p>
+                            <pre><code>#kiri-double {
+    border-color: blueviolet;
+}</code></pre>
+                            <a href="10. border/index.html" target="_blank" class="original-file-link">Lihat file asli: 10. border/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 9: CSS Padding -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-expand-alt icon-prefix"></i>9. CSS Padding <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Padding adalah ruang di antara konten elemen dan bordernya. Ini adalah bagian dari elemen itu sendiri.</p>
+                    <p>Shorthand untuk padding:</p>
+                    <ul>
+                        <li><code>padding: 40px;</code> (semua sisi)</li>
+                        <li><code>padding: 20px 50px;</code> (vertikal, horizontal)</li>
+                        <li><code>padding: 5px 20px 50px;</code> (atas, horizontal, bawah)</li>
+                        <li><code>padding: 5px 10px 20px 50px;</code> (atas, kanan, bawah, kiri)</li>
+                    </ul>
+                    <pre><code>.padding-1 { padding: 40px; }
+.padding-2 { padding: 20px 50px; }
+.padding-3 { padding: 5px 20px 50px; }
+.padding-4 { padding: 5px 10px 20px 50px; }</code></pre>
+                    <a href="11. padding/index.html" target="_blank" class="original-file-link">Lihat file asli: 11. padding/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 10: CSS Margin -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-arrows-alt-h icon-prefix"></i>10. CSS Margin <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Margin adalah ruang di luar border elemen, digunakan untuk memisahkan elemen dari elemen lain.</p>
+                    <p>Shorthand untuk margin sama dengan padding:</p>
+                    <ul>
+                        <li><code>margin: 5px;</code> (semua sisi)</li>
+                        <li><code>margin: 10px 20px;</code> (vertikal, horizontal)</li>
+                        <li><code>margin: 10px auto 50px;</code> (atas, horizontal (auto untuk tengah), bawah)</li>
+                        <li><code>margin: 10px 20px 40px auto;</code> (atas, kanan, bawah, kiri (auto untuk dorong ke kanan))</li>
+                    </ul>
+                    <pre><code>.margin-1 { margin: 5px; }
+.margin-2 { margin: 10px 20px; }
+.margin-3 { margin: 10px auto 50px; }
+.margin-4 { margin: 10px 20px 40px auto; }</code></pre>
+                    <a href="12. margin/index.html" target="_blank" class="original-file-link">Lihat file asli: 12. margin/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 11: Display Element -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-columns icon-prefix"></i>11. Display Element <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti <code>display</code> adalah salah satu properti CSS yang paling penting, karena mengontrol bagaimana elemen dirender dan berinteraksi dengan elemen lain dalam tata letak.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>display: inline</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen ditampilkan sebaris dengan teks, dan tidak dapat memiliki lebar atau tinggi yang ditentukan. Contoh: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>.</p>
+                            <pre><code>span.inline {
+    display: inline;
+    width: 100px; /* Tidak akan berpengaruh */
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>display: block</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen dimulai pada baris baru dan mengambil lebar penuh yang tersedia. Dapat memiliki lebar dan tinggi yang ditentukan. Contoh: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>.</p>
+                            <pre><code>span.block {
+    display: block;
+    width: 100px; /* Akan berpengaruh */
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>display: inline-block</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen ditampilkan sebaris, tetapi dapat memiliki lebar dan tinggi yang ditentukan. Berguna untuk membuat elemen seperti tombol atau kartu yang sejajar tetapi memiliki dimensi.</p>
+                            <pre><code>span.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>display: flex</code> (Flexbox) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Mengubah elemen menjadi kontainer flex, memungkinkan penataan item anak secara fleksibel dalam satu dimensi (baris atau kolom).</p>
+                            <pre><code>.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}</code></pre>
+                            <a href="13. display elemen/index.html" target="_blank" class="original-file-link">Lihat file asli: 13. display elemen/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 12: List Style -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-list-ul icon-prefix"></i>12. List Style <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti <code>list-style</code> digunakan untuk mengatur tampilan penanda item daftar (bullet atau angka).</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>list-style-type</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menentukan jenis penanda:</p>
+                            <ul>
+                                <li>Untuk <code>&lt;ol&gt;</code>: <code>decimal</code>, <code>lower-roman</code>, <code>upper-roman</code>, <code>lower-latin</code>, <code>upper-latin</code>, <code>lower-greek</code>.</li>
+                                <li>Untuk <code>&lt;ul&gt;</code>: <code>disc</code> (default), <code>circle</code>, <code>square</code>, <code>none</code>.</li>
+                            </ul>
+                            <pre><code>ol { list-style-type: decimal; }
+ul.singkat { list-style-type: circle; }</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>list-style-position</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menentukan posisi penanda relatif terhadap item daftar:</p>
+                            <ul>
+                                <li><code>inside</code>: Penanda berada di dalam kotak konten item daftar.</li>
+                                <li><code>outside</code> (default): Penanda berada di luar kotak konten item daftar.</li>
+                            </ul>
+                            <pre><code>ul li { list-style-position: inside; }</code></pre>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>list-style</code> (Shorthand) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Shorthand untuk mengatur <code>list-style-type</code>, <code>list-style-position</code>, dan <code>list-style-image</code>.</p>
+                            <pre><code>ol.singkat { list-style: lower-greek inside; }</code></pre>
+                            <a href="14. list style/index.html" target="_blank" class="original-file-link">Lihat file asli: 14. list style/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 13: Table Style -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-table icon-prefix"></i>13. Table Style <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>CSS dapat digunakan untuk mempercantik tampilan tabel HTML.</p>
+                    <ul>
+                        <li><code>width</code>: Mengatur lebar tabel.</li>
+                        <li><code>border-collapse</code>: Menggabungkan border sel yang berdekatan (<code>collapse</code>) atau memisahkannya (<code>separate</code>).</li>
+                        <li><code>padding</code>: Ruang dalam sel.</li>
+                        <li><code>text-align</code>: Perataan teks dalam sel.</li>
+                        <li><code>:hover</code>: Efek saat kursor diarahkan ke baris tabel.</li>
+                    </ul>
+                    <pre><code>table {
+    width: 600px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 7px 10px;
+}
+th {
+    border-top: 1px solid darkorange;
+    border-bottom: 2px solid black;
+    text-align: left;
+}
+tr.genap {
+    background-color: #efefef;
+}
+tr:hover {
+    background-color: darkolivegreen;
+}</code></pre>
+                    <a href="15. Table style/index.html" target="_blank" class="original-file-link">Lihat file asli: 15. Table style/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 14: Form Style -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-wpforms icon-prefix"></i>14. Form Style <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>CSS memungkinkan penyesuaian tampilan elemen formulir seperti input teks, tombol, dan lainnya.</p>
+                    <ul>
+                        <li><code>font-size</code>, <code>color</code>, <code>background-color</code>: Mengatur teks dan latar belakang input.</li>
+                        <li><code>border</code>, <code>border-radius</code>, <code>padding</code>: Mengatur border dan ruang dalam.</li>
+                        <li><code>background-image</code>, <code>background-repeat</code>, <code>background-size</code>, <code>background-position</code>: Menambahkan ikon ke dalam input.</li>
+                        <li><code>:focus</code>, <code>:hover</code>, <code>:active</code>: Mengatur gaya saat input aktif, disorot, atau ditekan.</li>
+                    </ul>
+                    <pre><code>input {
+    font-size: 120%;
+    color: darkslategrey;
+    background-color: #efefef;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 40px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 8px;
+}
+input#telegram { background-image: url("telegram.png"); }
+input#submit {
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+input#submit:hover {
+    color: orange;
+    background-color: indigo;
+}</code></pre>
+                    <a href="16. Form style/index.html" target="_blank" class="original-file-link">Lihat file asli: 16. Form style/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 15: Image Style -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-image icon-prefix"></i>15. Image Style <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>CSS digunakan untuk mengatur ukuran, posisi, dan efek pada gambar.</p>
+                    <ul>
+                        <li><code>width</code>, <code>height</code>: Mengatur dimensi gambar.</li>
+                        <li><code>float</code>: Mengapungkan gambar ke kiri atau kanan, memungkinkan teks mengalir di sekitarnya.</li>
+                        <li><code>display: block</code> dan <code>margin: 0 auto</code>: Untuk memusatkan gambar.</li>
+                    </ul>
+                    <pre><code>.img-large { width: 300px; height: 300px; }
+.align-right { float: right; margin-left: 10px; }
+.align-left { float: left; margin-right: 10px; }
+.align-center { display: block; margin: 0px auto; }</code></pre>
+                    <a href="17. image style/index.html" target="_blank" class="original-file-link">Lihat file asli: 17. image style/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 16: CSS Position -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-map-pin icon-prefix"></i>16. CSS Position <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti <code>position</code> digunakan untuk mengontrol penempatan elemen di halaman web.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>position: static</code> (Default) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen dirender dalam urutan normal dokumen. Properti <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> tidak berpengaruh.</p>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>position: relative</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen diposisikan relatif terhadap posisi normalnya. Menggunakan <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> akan menggeser elemen dari posisi aslinya, tetapi ruang yang ditempati elemen tetap dipertahankan dalam aliran dokumen.</p>
+                            <pre><code>p {
+    position: relative;
+    top: 100px;
+    background-color: aqua;
+}
+.posisi-relative {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: coral;
+}</code></pre>
+                            <a href="18. absolute-position/index.html" target="_blank" class="original-file-link">Lihat file asli: 18. absolute-position/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>position: absolute</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen diposisikan relatif terhadap elemen induk terdekat yang memiliki posisi non-<code>static</code> (yaitu <code>relative</code>, <code>absolute</code>, <code>fixed</code>, atau <code>sticky</code>). Jika tidak ada induk dengan posisi non-<code>static</code>, elemen akan diposisikan relatif terhadap <code>&lt;html&gt;</code>. Elemen yang diposisikan absolut dihapus dari aliran normal dokumen.</p>
+                            <pre><code>.posisi-absolute {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    background-color: coral;
+}</code></pre>
+                            <a href="19. relative-position/index.html" target="_blank" class="original-file-link">Lihat file asli: 19. relative-position/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>position: fixed</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen diposisikan relatif terhadap viewport (jendela browser) dan tidak akan bergerak saat halaman digulir. Berguna untuk header, footer, atau tombol "kembali ke atas".</p>
+                            <pre><code>.posisi-fixed {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: coral;
+}
+.container {
+    margin-top: 100px; /* Penting untuk menghindari konten tertutup */
+}</code></pre>
+                            <a href="20. fixed-position/index.html" target="_blank" class="original-file-link">Lihat file asli: 20. fixed-position/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary"><code>position: sticky</code> <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Elemen diposisikan relatif sampai mencapai ambang batas gulir tertentu (misalnya <code>top: 0</code>), setelah itu ia menjadi "fixed" pada posisi tersebut. Berguna untuk navigasi yang menempel atau judul bagian.</p>
+                            <pre><code>.judul-1 {
+    position: sticky;
+    top: 0px;
+}
+.judul-2 {
+    position: sticky;
+    top: 45px;
+}
+.judul-3 {
+    position: sticky;
+    bottom: 0px;
+}</code></pre>
+                            <a href="21. Sticky-position/index.html" target="_blank" class="original-file-link">Lihat file asli: 21. Sticky-position/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian 17: Z-index -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-layer-group icon-prefix"></i>17. Z-index <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti <code>z-index</code> mengontrol urutan tumpukan elemen yang diposisikan (non-<code>static</code>). Elemen dengan <code>z-index</code> yang lebih tinggi akan muncul di atas elemen dengan <code>z-index</code> yang lebih rendah.</p>
+                    <pre><code>.header {
+    position: fixed;
+    z-index: 3; /* Paling atas */
+}
+.container {
+    position: relative;
+    z-index: 2; /* Di bawah header */
+}</code></pre>
+                    <a href="22. Z-index/index.html" target="_blank" class="original-file-link">Lihat file asli: 22. Z-index/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 18: Float -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-align-left icon-prefix"></i>18. Float <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Properti <code>float</code> digunakan untuk menempatkan elemen di sisi kiri atau kanan kontainernya, memungkinkan teks dan elemen inline lainnya mengalir di sekitarnya. Ini sering digunakan untuk tata letak multi-kolom, meskipun Flexbox dan Grid sekarang lebih disukai.</p>
+                    <pre><code>blockquote {
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}</code></pre>
+                    <a href="23. Float/index.html" target="_blank" class="original-file-link">Lihat file asli: 23. Float/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 19: Fixed-width Layout -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-ruler-horizontal icon-prefix"></i>19. Fixed-width Layout <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Tata letak lebar tetap (fixed-width layout) memiliki lebar halaman yang tidak berubah, terlepas dari ukuran jendela browser. Ini sering diatur dengan lebar piksel tetap dan dipusatkan menggunakan <code>margin: 0 auto;</code>.</p>
+                    <pre><code>body {
+    width: 960px;
+    margin: 0px auto;
+}
+.article {
+    float: left;
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+}
+#content {
+    overflow: auto; /* Penting untuk membersihkan float */
+}</code></pre>
+                    <a href="24. fixed-width/index.html" target="_blank" class="original-file-link">Lihat file asli: 24. fixed-width/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 20: Liquid Layout -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-tint icon-prefix"></i>20. Liquid Layout <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Tata letak cair (liquid layout) menyesuaikan lebarnya dengan ukuran jendela browser. Ini biasanya dicapai dengan menggunakan unit persentase (<code>%</code>) untuk lebar elemen.</p>
+                    <pre><code>body {
+    width: 90%;
+    margin: 0 auto;
+}
+.column1, .column2, .column3 {
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    float: left;
+}
+#content {
+    overflow: auto; /* Penting untuk membersihkan float */
+}</code></pre>
+                    <a href="25. Liquid Layout/index.html" target="_blank" class="original-file-link">Lihat file asli: 25. Liquid Layout/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 21: Grid Layout -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-th icon-prefix"></i>21. Grid Layout <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>CSS Grid Layout adalah sistem tata letak dua dimensi yang sangat kuat, memungkinkan Anda mendesain tata letak kompleks dengan baris dan kolom.</p>
+                    <ul>
+                        <li><code>display: grid</code>: Mengubah elemen menjadi kontainer grid.</li>
+                        <li><code>grid-template-columns</code>: Menentukan jumlah dan lebar kolom.</li>
+                        <li><code>grid-template-rows</code>: Menentukan jumlah dan tinggi baris.</li>
+                        <li><code>gap</code>: Jarak antar baris dan kolom.</li>
+                        <li><code>grid-column-start</code> / <code>grid-column-end</code>: Mengatur item untuk membentang di beberapa kolom.</li>
+                        <li><code>grid-row-start</code> / <code>grid-row-end</code>: Mengatur item untuk membentang di beberapa baris.</li>
+                    </ul>
+                    <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: 10% 30% auto;
+    grid-template-rows: 100px 200px auto;
+    gap: 10px 10px;
+}
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item5 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}</code></pre>
+                    <a href="26. Grid Layout/index.html" target="_blank" class="original-file-link">Lihat file asli: 26. Grid Layout/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 22: Viewport -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-mobile-alt icon-prefix"></i>22. Viewport <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Viewport adalah area yang terlihat oleh pengguna di jendela browser. Meta tag <code>&lt;meta name="viewport"&gt;</code> sangat penting untuk membuat situs web responsif di perangkat seluler.</p>
+                    <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                    <ul>
+                        <li><code>width=device-width</code>: Mengatur lebar viewport agar sama dengan lebar perangkat.</li>
+                        <li><code>initial-scale=1.0</code>: Mengatur tingkat zoom awal saat halaman pertama kali dimuat.</li>
+                    </ul>
+                    <a href="27. Viewport/index.html" target="_blank" class="original-file-link">Lihat file asli: 27. Viewport/index.html</a>
+                </div>
+            </details>
+
+            <!-- Bagian 23: Responsive Layout -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-desktop icon-prefix"></i>23. Responsive Layout <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Tata letak responsif adalah desain web yang memungkinkan tata letak halaman beradaptasi dengan berbagai ukuran layar dan perangkat. Ini sering dicapai dengan kombinasi unit relatif (persentase), media queries, dan Flexbox/Grid.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Media Queries <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Media queries memungkinkan Anda menerapkan gaya CSS yang berbeda berdasarkan karakteristik perangkat, seperti lebar layar.</p>
+                            <pre><code>/* Gaya default untuk semua layar */
+[class*="col-"] {
+    width: 100%; /* Default: semua kolom 100% lebar (untuk mobile) */
+    float: left;
+    padding: 10px;
+}
+
+/* Gaya untuk layar dengan lebar minimal 768px (tablet ke atas) */
+@media only screen and (min-width:768px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    /* ... dan seterusnya untuk kolom lainnya */
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+    .menu li {
+        width: 20%;
+        display: inline-block;
+    }
+}</code></pre>
+                            <a href="0. Latihan CSS/Latihan 7/index.html" target="_blank" class="original-file-link">Lihat file asli: 0. Latihan CSS/Latihan 7/index.html</a>
+                            <a href="28. Responsive layout/index.html" target="_blank" class="original-file-link">Lihat file asli: 28. Responsive layout/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- Bagian Latihan CSS -->
+            <details class="accordion">
+                <summary class="accordion-summary">
+                    <i class="fas fa-code icon-prefix"></i>24. Latihan CSS <i class="fas fa-chevron-right arrow"></i>
+                </summary>
+                <div class="content accordion-content">
+                    <p>Berikut adalah beberapa contoh latihan CSS yang menggabungkan berbagai konsep yang telah dipelajari.</p>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 1: Selector Dasar <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Latihan ini fokus pada penggunaan berbagai jenis selector CSS untuk menargetkan elemen HTML.</p>
+                            <a href="0. Latihan CSS/Latihan 1/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 1/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 2: Cascade & Inheritance <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Memahami bagaimana aturan CSS diterapkan berdasarkan prioritas (cascade) dan bagaimana properti diwarisi dari elemen induk.</p>
+                            <a href="0. Latihan CSS/Latihan 2/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 2/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 3: Box Model & Overflow <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Praktik penggunaan properti box model (width, height, min/max-width, overflow) untuk mengontrol ukuran dan tampilan kotak elemen.</p>
+                            <a href="0. Latihan CSS/Latihan 3/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 3/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 4: Layout Sederhana dengan Float <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Membangun tata letak halaman berita sederhana menggunakan properti <code>float</code> untuk menempatkan elemen berdampingan.</p>
+                            <a href="0. Latihan CSS/Latihan 4/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 4/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 5: Website Perpustakaan (Styling Lanjutan) <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menerapkan berbagai gaya CSS pada elemen header, navigasi, tabel, dan formulir untuk membuat tampilan website perpustakaan yang lebih menarik.</p>
+                            <a href="0. Latihan CSS/Latihan 5/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 5/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 6: Multi-Kolom & Fixed Header <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Membuat tata letak multi-kolom dengan konten utama dan menu samping, serta header yang tetap (fixed) di bagian atas saat menggulir halaman.</p>
+                            <a href="0. Latihan CSS/Latihan 6/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 6/index.html</a>
+                        </div>
+                    </details>
+                    <details class="sub-accordion">
+                        <summary class="accordion-summary">Latihan 7: Responsive Design Dasar <i class="fas fa-angle-right arrow"></i></summary>
+                        <div class="content sub-accordion-content">
+                            <p>Menerapkan konsep desain responsif menggunakan media queries dan sistem grid dasar untuk memastikan tata letak beradaptasi dengan berbagai ukuran layar.</p>
+                            <a href="0. Latihan CSS/Latihan 7/index.html" target="_blank" class="original-file-link">Lihat file asli: Latihan 7/index.html</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="footer-text">Dibuat oleh <span class="author-name">Raihan Fahrel Akbar</span> &copy; 2025</p>
+            <div class="footer-decoration"></div>
+        </div>
+    </footer>
+    
+    <button id="installBtn" style="display: none;">Install Aplikasi</button>
+    <script src="script.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+</body>
+</html>

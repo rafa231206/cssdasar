@@ -1,0 +1,43 @@
+/* Mengatur font default dan warna teks pada seluruh body halaman */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font teks utama */
+    color: #223311; /* Warna teks utama (hijau tua) */
+}
+
+/* Mengatur tampilan umum untuk elemen tabel */
+table {
+    width: 600px; /* Lebar tabel */
+    
+    /* 
+        border-spacing mengatur jarak antar sel (saat border-collapse: separate);
+        di sini dikomentari karena tidak digunakan:
+        border-spacing: 10px; 
+    */
+
+    border-collapse: collapse; 
+    /* Menggabungkan border antar sel agar terlihat seperti satu garis */
+}
+
+/* Mengatur tampilan untuk semua elemen <th> (header) dan <td> (data) */
+th, td {
+    padding: 7px 10px 10px 10px; 
+    /* Padding atas 7px, kanan 10px, bawah 10px, kiri 10px */
+}
+
+/* Mengatur khusus tampilan elemen <th> (header kolom) */
+th {
+    border-top: 1px solid darkorange; /* Garis atas header */
+    border-bottom: 2px solid black;   /* Garis bawah header */
+    text-align: left; /* Teks rata kiri */
+    font-size: 80%;    /* Ukuran font lebih kecil dari normal */
+}
+
+/* Memberikan warna latar khusus untuk baris genap agar bergantian warna */
+tr.genap {
+    background-color: #efefef; /* Abu-abu muda */
+}
+
+/* Memberikan efek saat baris tabel dihover (disorot mouse) */
+tr:hover {
+    background-color: darkolivegreen; /* Hijau zaitun gelap */
+}

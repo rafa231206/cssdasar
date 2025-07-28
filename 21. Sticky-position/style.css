@@ -1,0 +1,35 @@
+/* Mengatur semua elemen agar:
+   - menggunakan font Tahoma
+   - ukuran padding & border ikut dihitung dalam lebar & tinggi elemen (box-sizing) */
+   * {
+    font-family: Tahoma;
+    box-sizing: border-box;
+}
+
+/* Mengatur tampilan elemen <h2> */
+h2 {
+    background-color: coral;   /* Warna latar belakang oranye */
+    height: 40px;              /* Tinggi elemen 40px */
+    padding: 5px;              /* Ruang dalam (padding) 5px di semua sisi */
+}
+
+/* Sticky judul-1:
+   Menempel di atas layar saat discroll ke arahnya */
+.judul-1 {
+    position: sticky;          /* Akan menempel ketika menyentuh tepi atas layar */
+    top: 0px;                  /* Menempel di paling atas */
+}
+
+/* Sticky judul-2:
+   Sama seperti judul-1 tapi jaraknya 45px dari atas */
+.judul-2 {
+    position: sticky;
+    top: 45px;                 /* Menempel 45px dari atas layar */
+}
+
+/* Sticky judul-3:
+   Menempel di bawah layar saat discroll ke arahnya */
+.judul-3 {
+    position: sticky;
+    bottom: 0px;               /* Menempel di bagian bawah layar */
+}

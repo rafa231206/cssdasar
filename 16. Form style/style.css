@@ -1,0 +1,56 @@
+/* Mengatur tampilan dasar untuk semua elemen <input> */
+input {
+    font-size: 120%; /* Memperbesar ukuran teks */
+    color: darkslategrey; /* Warna teks input */
+    background-color: #efefef; /* Warna latar input */
+    border: 1px solid #bdbdbd; /* Garis tepi abu-abu */
+    border-radius: 5px; /* Membuat sudut input sedikit melengkung */
+    padding: 5px 5px 5px 40px; /* Padding kiri diperbesar agar ada ruang untuk ikon */
+
+    display: block; /* Agar input ditampilkan satu per baris */
+    margin-bottom: 10px; /* Jarak antar input */
+
+    /* Ikon dalam input */
+    background-repeat: no-repeat; /* Jangan ulang gambar latar */
+    background-size: 20px;        /* Ukuran ikon */
+    background-position: 8px;     /* Posisi ikon dari kiri */
+}
+
+/* Saat input aktif (fokus diklik), tetap jaga warna latar */
+input:focus {
+    background-color: #efefef;
+}
+
+/* Ikon khusus berdasarkan ID input */
+input#telegram {
+    background-image: url("telegram.png"); /* Menambahkan ikon Telegram */
+}
+
+input#instagram {
+    background-image: url("instagram.png"); /* Menambahkan ikon Instagram */
+}
+
+input#whatsapp {
+    background-image: url("whatsapp.png"); /* Menambahkan ikon WhatsApp */
+}
+
+/* Gaya khusus untuk tombol kirim (submit) */
+input#submit {
+    color: #efefef; /* Warna teks putih pucat */
+    text-shadow: 1px 1px 1px #ffffff; /* Bayangan halus agar teks terlihat timbul */
+    background-color: darkslategrey; /* Warna latar utama tombol */
+    padding: 5px 10px 5px 10px; /* Padding semua sisi */
+}
+
+/* Efek saat tombol disorot (hover) */
+input#submit:hover {
+    color: orange; /* Warna teks berubah jadi oranye */
+    background-color: indigo; /* Warna latar berubah */
+    cursor: pointer; /* Tunjukkan bahwa ini tombol klik */
+}
+
+/* Efek saat tombol ditekan (active) */
+input#submit:active {
+    color: lawngreen; /* Teks menjadi hijau terang */
+    background-color: lightcoral; /* Latar menjadi merah muda */
+}

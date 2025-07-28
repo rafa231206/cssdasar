@@ -1,0 +1,24 @@
+/* Mengatur font seluruh elemen di halaman menjadi Tahoma */
+* {
+    font-family: Tahoma;
+}
+
+/* Mengatur tampilan elemen paragraf <p> */
+p {       
+    background-color: aqua;  /* Memberi warna latar belakang biru muda */
+}
+
+/* Mengatur elemen dengan class "posisi-fixed" */
+.posisi-fixed {
+    position: fixed;           /* Elemen akan selalu berada di posisi tetap (tidak ikut scroll) */
+    left: 0px;                 /* Menempel di sisi kiri layar */
+    top: 0px;                  /* Menempel di sisi atas layar */
+    width: 100%;              /* Lebar elemen 100% dari lebar layar */
+    height: 100px;            /* Tinggi elemen 100px */
+    background-color: coral;  /* Memberi warna latar belakang oranye */
+}
+
+/* Memberi jarak atas pada container agar tidak tertutup oleh elemen fixed di atas */
+.container {
+    margin-top: 100px;         /* Jarak dari atas sebesar 100px, sama seperti tinggi elemen fixed */
+}

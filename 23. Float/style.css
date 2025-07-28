@@ -1,0 +1,22 @@
+/* Mengatur font judul utama (h1) */
+h1 {
+    font-family: Arial; /* Menggunakan font Arial untuk judul */
+}
+
+/* Mengatur paragraf */
+p {
+    font-family: Arial;       /* Menggunakan font Arial untuk paragraf */
+    text-align: justify;      /* Menjajarkan teks rata kiri-kanan */
+}
+
+/* Mengatur tampilan blockquote (kutipan) */
+blockquote {
+    float: right;             /* Membuat blockquote berada di sisi kanan teks */
+    font-family: Georgia;     /* Font khusus untuk kutipan agar terlihat beda */
+    font-style: italic;       /* Gaya miring untuk menandai kutipan */
+    border-top: 1px solid;    /* Garis tipis di bagian atas */
+    border-bottom: 1px solid; /* Garis tipis di bagian bawah */
+    width: 200px;             /* Lebar tetap 200 piksel */
+    padding: 10px;            /* Ruang dalam agar teks tidak menempel ke pinggir */
+    margin: 10px;             /* Jarak luar dari elemen sekitarnya */
+}

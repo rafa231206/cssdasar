@@ -1,0 +1,66 @@
+/* ====================================== */
+/*       GLOBAL FONT UNTUK SEMUA ELEMEN   */
+/* ====================================== */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ====================================== */
+/*              CLASS: .dekor             */
+/* Kotak dekoratif yang ukurannya menyesuaikan konten */
+/* ====================================== */
+.dekor {
+    width: fit-content;         /* Lebar mengikuti ukuran isi konten */
+    height: fit-content;        /* Tinggi juga mengikuti isi */
+    border: 5px solid;          /* Garis tebal di semua sisi (default: hitam) */
+    padding: 20px;              /* Jarak isi ke tepi dalam */
+}
+
+
+/* ====================================== */
+/*         VARIASI PENGGUNAAN MARGIN      */
+/* ====================================== */
+
+/* Margin sama untuk semua sisi */
+.margin-1 {
+    margin: 5px;
+}
+
+/* Atas & bawah = 10px, Kiri & kanan = 20px */
+.margin-2 {
+    margin: 10px 20px;
+}
+
+/* Atas = 10px, Kiri & kanan = auto (tengah otomatis), Bawah = 50px */
+.margin-3 {
+    margin: 10px auto 50px;
+}
+
+/* Atas = 10px, Kanan = 20px, Bawah = 40px, Kiri = auto (mendorong elemen ke kanan) */
+.margin-4 {
+    margin: 10px 20px 40px auto;
+}
+
+
+/* ====================================== */
+/*          CATATAN TAMBAHAN              */
+/* ====================================== */
+
+/*
+  Penulisan margin juga bisa dipisah menjadi:
+  
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+*/
+
+/*
+  Penjelasan singkat nilai shorthand margin:
+
+  - 1 nilai  → semua sisi (atas, kanan, bawah, kiri)
+  - 2 nilai  → atas & bawah | kiri & kanan
+  - 3 nilai  → atas | kiri & kanan | bawah
+  - 4 nilai  → atas | kanan | bawah | kiri
+*/
