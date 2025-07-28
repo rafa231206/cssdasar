@@ -1,0 +1,57 @@
+/* === UNIVERSAL SELECTOR === */
+/* Menerapkan font Arial ke semua elemen di halaman */
+* {
+    font-family: 'Arial';
+}
+
+/* === TYPE SELECTOR === */
+/* Mengatur warna untuk elemen heading berdasarkan tag */
+h1 {
+    color: chocolate; /* Warna coklat untuk h1 */
+}
+h2 {
+    color: darkblue; /* Warna biru tua untuk h2 */
+}
+
+/* === CLASS SELECTOR === */
+/* Mengatur warna untuk elemen <li> yang memiliki class="sarapan" */
+li.sarapan {
+    color: darkgoldenrod; /* Warna emas tua */
+}
+
+/* === ID SELECTOR === */
+/* Mengatur warna untuk elemen yang memiliki id="makan_siang" */
+#makan_siang {
+    color: darkgreen; /* Warna hijau tua */
+}
+
+/* === CHILD SELECTOR === */
+/* Mengatur warna elemen <b> yang langsung berada di dalam <p> */
+p > b {
+    color: darkorange; /* Warna oranye tua */
+}
+/* Artinya: hanya <b> yang merupakan **anak langsung** dari <p> yang akan terpengaruh */
+
+/* === CLASS SELECTOR LAINNYA === */
+/* Mengatur warna untuk elemen <li> yang memiliki class="b" */
+li.b {
+    color: darkslateblue; /* Warna biru-ungu tua */
+}
+
+/* === DESCENDANT SELECTOR === */
+/* Mengatur warna untuk elemen <b> yang berada **di dalam** elemen <i> di dalam <p> */
+p b {
+    color: blue; /* Warna biru untuk <b> yang ada di dalam <p>, tidak harus anak langsung */
+}
+
+/* === ADJACENT SIBLING SELECTOR === */
+/* Mengatur warna untuk <h2> yang langsung berada setelah elemen <p> */
+p + h2 {
+    color: deeppink; /* Warna pink cerah */
+}
+
+/* === GENERAL SIBLING SELECTOR === */
+/* Mengubah font untuk semua <p> yang muncul setelah <h2> sebagai saudara (tidak harus berurutan langsung) */
+h2 ~ p {
+    font-family: 'Times New Roman'; /* Ganti font jadi Times New Roman */
+}

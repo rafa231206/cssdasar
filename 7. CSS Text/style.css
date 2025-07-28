@@ -1,0 +1,76 @@
+/* ======================= */
+/*        JUDUL <h1>       */
+/* ======================= */
+h1 {
+    font-family: Georgia;              /* Font serif elegan */
+    font-size: xx-large;               /* Ukuran teks sangat besar */
+    font-weight: normal;               /* Berat huruf normal (tidak bold) */
+    text-transform: uppercase;         /* Semua huruf menjadi kapital */
+    text-align: center;                /* Rata tengah */
+    color: brown;                    /* Warna coklat */
+    
+    /* Efek bayangan teks */
+    text-shadow: 10px 5px 5px black;
+    /* Format: offset-x | offset-y | blur-radius | color */
+    
+    word-spacing: 0.5em;               /* Jarak antar kata */
+    letter-spacing: 5px;               /* Jarak antar huruf */
+}
+
+
+/* ======================= */
+/*   KREDIT PENULIS .credit */
+/* ======================= */
+.credit {
+    font-family: Verdana;             /* Font sans-serif */
+    font-size: 11px;                  /* Ukuran kecil */
+    font-weight: bold;                /* Teks tebal */
+    font-style: italic;               /* Teks miring */
+    text-decoration: underline;       /* Garis bawah */
+    text-transform: capitalize;       /* Huruf pertama tiap kata menjadi kapital */
+    text-align: center;               /* Rata tengah */
+}
+
+
+/* ======================= */
+/*     TAUTAN .tautan      */
+/* ======================= */
+.tautan {
+    font-family: Arial, Helvetica, sans-serif;  /* Font sans-serif modern */
+    font-size: 80%;                 /* Lebih kecil dari normal */
+    text-decoration: none;         /* Menghilangkan garis bawah default pada link */
+    text-transform: lowercase;     /* Semua huruf menjadi huruf kecil */
+}
+
+
+/* ==== GAYA LINK BERDASARKAN STATUS ==== */
+
+/* Link yang belum dikunjungi */
+a.tautan:link {
+    color: rgb(75, 20, 255);       /* Biru keunguan terang */
+}
+
+/* Link yang sudah dikunjungi */
+a.tautan:visited {
+    color: darkgreen;              /* Hijau tua */
+}
+
+/* Saat mouse diarahkan ke link */
+a.tautan:hover {
+    color: deeppink;               /* Pink cerah */
+}
+
+/* Saat link diklik (aktif) */
+a.tautan:active {
+    color: darkcyan;               /* Biru kehijauan */
+}
+
+
+/* =========================== */
+/*  PARAGRAF .intro (konten)   */
+/* =========================== */
+p.intro {
+    font-family: 'Segoe UI';       /* Font modern dan halus */
+    font-size: 1.2em;              /* Ukuran sedikit lebih besar dari normal */
+    text-align: justify;          /* Rata kiri dan kanan seperti koran */
+}

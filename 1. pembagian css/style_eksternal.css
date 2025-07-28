@@ -1,0 +1,25 @@
+/* Mengatur tampilan untuk elemen heading <h1> */
+h1 {
+    color: brown;              /* Warna teks coklat */
+    font-family: Verdana;      /* Menggunakan font Verdana untuk judul */
+}
+
+/* Mengatur font untuk seluruh paragraf <p> */
+p {
+    font-family: Arial;        /* Gunakan font Arial agar lebih mudah dibaca */
+}
+
+/* Mengatur warna teks biru untuk elemen <b> (teks tebal) */
+b {
+    color: blue;               /* Teks di dalam <b> akan berwarna biru */
+}
+
+/* Memberi latar belakang biru muda untuk elemen <i> (teks miring) */
+i {
+    background-color: cyan;    /* Warna latar belakang cyan pada teks miring */
+}
+
+/* Mengatur warna latar belakang seluruh halaman */
+body {
+    background-color: antiquewhite; /* Latar belakang berwarna krem pucat */
+}

@@ -1,0 +1,76 @@
+/* === UNIVERSAL SELECTOR === */
+/* Mengatur font semua elemen menjadi Arial (dengan fallback ke Helvetica atau sans-serif) */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* === CLASS: .border1 === */
+/* Garis tepi umum dengan pengaturan khusus bagian bawah */
+.border1 {
+    border: 2px solid brown;          /* Semua sisi: garis solid 2px berwarna coklat */
+    border-bottom-width: 4px;         /* Tapi sisi bawah diganti jadi 4px (lebih tebal) */
+}
+
+
+/* === ID: #atas-solid === */
+/* Mengatur border atas saja */
+#atas-solid {
+    border: 4px;                      /* Hanya menentukan lebar (tanpa warna/style default) */
+    border-top-style: solid;         /* Bagian atas: garis solid */
+}
+
+
+/* === ID: #kiri-double === */
+/* Mengatur border kiri saja */
+#kiri-double {
+    border-color: blueviolet;        /* Warna border ungu kebiruan */
+    border-left-width: 4px;          /* Lebar garis kiri 4px */
+    border-left-style: double;       /* Jenis garis kiri: double line */
+}
+
+
+/* === ID: #bawah-dotted === */
+/* Mengatur border bawah saja */
+#bawah-dotted {
+    border-color: crimson;           /* Warna merah tua */
+    border-bottom-width: 4px;        /* Tebal garis bawah */
+    border-bottom-style: dotted;     /* Jenis garis: titik-titik */
+}
+
+
+/* === ID: #kanan-dashed === */
+/* Mengatur border kanan saja */
+#kanan-dashed {
+    border-color: crimson;           /* Warna merah tua */
+    border-right-width: 4px;         /* Tebal garis kanan */
+    border-right-style: dashed;      /* Garis putus-putus */
+}
+
+
+/* === CLASS: .border2 === */
+/* Border seragam di semua sisi */
+.border2 {
+    border-width: 20px;              /* Semua sisi = 20px */
+    border-color: darkgreen;         /* Warna hijau gelap */
+    border-style: solid;             /* Garis solid */
+}
+
+
+/* === CLASS: .border3 === */
+/* Border berbeda antara vertikal dan horizontal */
+.border3 {
+    border-width: 20px 5px;          /* Atas & bawah = 20px, kanan & kiri = 5px */
+    border-color: darkgreen;
+    border-style: solid;
+}
+
+
+/* === CLASS: .border4 === */
+/* Border sisi atas, kanan, bawah, kiri berbeda-beda */
+.border4 {
+    border-width: 5px 10px 15px 20px;
+    /* Atas = 5px, Kanan = 10px, Bawah = 15px, Kiri = 20px */
+    border-color: darkgreen;
+    border-style: solid;
+}

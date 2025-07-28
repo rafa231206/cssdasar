@@ -1,0 +1,70 @@
+/* === BOX 1 === */
+.box1 {
+    height: 100px;                   /* Tinggi kotak 100px */
+    width: 300px;                    /* Lebar kotak 300px */
+    background-color: #bbbbaa;       /* Warna latar abu kehijauan */
+}
+
+/* Paragraf di dalam .box1 */
+.box1 p {
+    height: 75%;                     /* Tinggi 75% dari induknya (.box1 → 75px) */
+    width: 75%;                      /* Lebar 75% dari induknya (.box1 → 225px) */
+    background-color: #0088dd;       /* Biru cerah */
+}
+
+
+/* === BOX 2 === */
+.box2 {
+    height: 200px;                   /* Tinggi kotak 200px */
+    width: 400px;                    /* Lebar kotak 400px */
+    background-color: aqua;         /* Latar belakang biru muda */
+}
+
+/* Judul (h2) di dalam .box2 */
+.box2 h2 {
+    width: 25%;                      /* Lebar 25% dari box2 (100px) */
+    background-color: bisque;       /* Warna krem terang */
+}
+
+/* Paragraf di dalam .box2 */
+.box2 p {
+    width: 50%;                      /* Lebar 50% dari box2 (200px) */
+    background-color: coral;        /* Warna merah muda jingga */
+}
+
+
+/* === TABEL: Ukuran Minimum & Maksimum === */
+td {
+    background-color: cadetblue;    /* Warna biru kehijauan */
+}
+
+/* Kolom deskripsi dengan lebar min dan maks */
+td.deskripsi {
+    min-width: 450px;               /* Lebar minimum: 450px */
+    max-width: 500px;               /* Lebar maksimum: 500px */
+    background-color: orange;       /* Warna latar oranye */
+}
+
+
+/* === TEXT STYLING UNTUK H2 & H3 === */
+h2, h3 {
+    font-family: Arial;             /* Gunakan font Arial */
+    color: dodgerblue;              /* Warna teks biru cerah */
+}
+
+
+/* === OVERFLOW === */
+
+/* Paragraf dengan overflow disembunyikan (terpotong) */
+p.satu {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;               /* Konten yang melebihi kotak tidak terlihat */
+}
+
+/* Paragraf dengan overflow menggunakan scrollbar */
+p.dua {
+    height: 100px;
+    width: 200px;
+    overflow: scroll;               /* Tampilkan scrollbar meskipun belum tentu perlu */
+}

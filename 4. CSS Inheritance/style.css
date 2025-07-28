@@ -1,0 +1,17 @@
+/* === STYLE UNTUK BODY (Elemen Induk) === */
+body {
+    font-family: Arial;            /* Mengatur font utama seluruh halaman */
+    color: darkslategrey;          /* Warna teks utama */
+    padding: 10px;                 /* Memberi jarak 10px dari tepi ke konten dalam body */
+}
+
+/* === STYLE UNTUK ELEMEN DENGAN CLASS .intro === */
+.intro {
+    border: 1px solid #665544;     /* Garis pinggir tipis berwarna coklat tua */
+    
+    padding: inherit;              /* Mewarisi nilai padding dari elemen induknya, yaitu body */
+    /*
+        Artinya: padding pada .intro akan sama seperti padding body (10px),
+        karena menggunakan 'inherit'.
+    */
+}

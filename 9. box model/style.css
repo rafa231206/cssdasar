@@ -1,0 +1,29 @@
+/* UNIVERSAL SELECTOR */
+/* Semua elemen di halaman akan memakai font Arial (fallback ke Helvetica/sans-serif jika tidak tersedia) */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === CLASS: .container === */
+/* Elemen dengan class .container akan tampak seperti sebuah kotak utama */
+.container {
+    background-color: aquamarine;    /* Warna latar hijau kebiruan */
+    width: 240px;                    /* Lebar kotak */
+    height: 180px;                   /* Tinggi kotak */
+    border: 2px solid red;           /* Garis tepi merah dengan ketebalan 2px */
+}
+
+/* === CLASS: .content === */
+/* Awalnya didefinisikan begini (baris atas), tapi ditimpa di bawah */
+
+.content {
+    font-size: 36px;                 /* Ukuran font besar */
+    text-align: center;             /* Teks diratakan ke tengah */
+    background-color: bisque;       /* Warna latar krem muda */
+
+    width: 100px;                   /* Lebar konten */
+    height: 40px;                   /* Tinggi konten */
+    border: 20px solid red;         /* Border merah tebal di semua sisi */
+    padding: 10px;                  /* Jarak isi ke tepi border */
+    margin: 20px;                   /* Jarak luar (antar elemen) */
+}

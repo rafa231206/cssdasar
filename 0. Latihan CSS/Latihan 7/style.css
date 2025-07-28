@@ -1,0 +1,100 @@
+/* Reset gaya dasar untuk semua elemen */
+* {
+    box-sizing: border-box; /* Padding dan border tidak menambah ukuran elemen */
+    font-family: Tahoma; /* Font utama untuk seluruh halaman */
+}
+
+/* Bagian header (atas halaman) */
+.header {
+    background-color: #efefef; /* Warna latar abu-abu terang */
+    position: fixed; /* Tetap di posisi atas saat halaman discroll */
+    left: 0px;
+    top: 0px;
+    width: 100%; /* Lebar penuh halaman */
+}
+
+/* Judul di dalam header */
+.header h1 {
+    margin-left: 20px; /* Jarak dari kiri */
+}
+
+/* Container utama untuk memberi jarak dari header */
+.container {
+    margin-top: 100px; /* Supaya konten tidak tertutup header */
+}
+
+/* ================= MENU ================= */
+/* List menu tidak punya bullet */
+.menu ul {
+    list-style-type: none; /* Hilangkan bullet list */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Item di dalam menu */
+.menu li {
+    background-color: crimson; /* Warna merah tua */
+    padding: 10px; /* Ruang dalam */
+    margin-bottom: 10px; /* Jarak antar menu */
+    color: aliceblue; /* Warna teks putih kebiruan */
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 5); /* Bayangan menu */
+}
+
+/* ================= GAMBAR ================= */
+/* Gambar di dalam class "gambar" */
+.gambar img {
+    width: 100%; /* Gambar penuh selebar kontainer */
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: burlywood; /* Warna coklat muda */
+    width: 100%; /* Lebar penuh */
+    height: 60px; /* Tinggi tetap */
+    padding: 5px; /* Ruang dalam */
+    color: antiquewhite; /* Warna teks putih kecoklatan */
+    text-align: center; /* Posisi teks tengah */
+}
+
+/* ================= GRID SISTEM ================= */
+/* Semua class kolom (misal col-1, col-2, dst) */
+[class*="col-"] {
+    padding: 10px; /* Ruang dalam */
+    width: 100%; /* Default lebar 100% di layar kecil */
+}
+
+/* ================= RESPONSIF (untuk layar ≥ 768px) ================= */
+@media only screen and (min-width:768px) {
+
+    /* Lebar untuk tiap kolom */
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+
+    /* Kolom disusun horizontal */
+    [class*="col-"] {
+        float: left; /* Letakkan kolom sejajar */
+    }
+
+    /* Footer tetap di bawah layar */
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    /* Menu tampil horizontal jika di layar besar */
+    .menu li {
+        width: 20%; /* Masing-masing menu lebarnya 1/5 */
+        display: inline-block; /* Tampil sejajar horizontal */
+    }
+}

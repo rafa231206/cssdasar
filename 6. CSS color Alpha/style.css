@@ -1,0 +1,49 @@
+/* === BODY === */
+/* Mengatur warna latar belakang dan teks seluruh halaman */
+body {
+    background-color: #efefef; /* Latar belakang abu muda */
+    color: #efefef;            /* Warna teks sama dengan latar (⚠️ akan tidak terlihat!) */
+    /* ⚠️ Saran: gunakan warna teks yang kontras, misalnya #222 atau #333 */
+}
+
+/* === ID SELECTOR === */
+/* Styling untuk elemen dengan id="artikel" */
+#artikel {
+    background-color: #a0a0a0; /* Abu-abu medium */
+    padding: 20px;             /* Jarak isi ke tepi kotak */
+}
+
+/* === H1 - Judul Utama === */
+h1 {
+    background-color: rgb(255, 0, 119); /* Warna pink cerah (merah + biru) */
+    padding: 10px;
+}
+
+/* === H2 - Subjudul dengan Transparansi === */
+h2 {
+    background-color: rgba(255, 0, 119, 0.5);
+    /* rgba = red, green, blue, alpha (transparansi)
+       Alpha 0.5 berarti 50% transparan */
+}
+
+/* === Paragraf 1 - Menggunakan HSL === */
+p.paragraf1 {
+    background-color: hsl(150, 50%, 25%);
+    /*
+        HSL = Hue, Saturation, Lightness
+        - Hue 150° → warna hijau kebiruan
+        - Saturation 50% → tingkat kejenuhan sedang
+        - Lightness 25% → warna gelap
+    */
+    padding-right: 10px;
+}
+
+/* === Paragraf 2 - Menggunakan HSLA (HSL + Alpha) === */
+p.paragraf2 {
+    background-color: hsla(150, 50%, 50%, 0.5);
+    /*
+        HSLA = HSL + Alpha (transparansi)
+        - Warna hijau terang, transparan 50%
+    */
+    padding: 10px;
+}

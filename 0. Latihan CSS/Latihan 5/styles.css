@@ -1,0 +1,178 @@
+/* Atur font default untuk semua elemen */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========== HEADER ========== */
+
+/* Kontainer header secara keseluruhan */
+.header {
+    display: flex; /* Membuat elemen anak berjajar secara horizontal */
+    background-color: beige;
+    padding: 10px;
+}
+
+/* Area logo di header */
+.header-logo {
+    margin-top: auto;
+    margin-bottom: auto; /* Posisikan vertikal tengah */
+}
+
+/* Gambar logo di header */
+.header-logo img {
+    height: 100px; /* Ukuran tinggi logo */
+}
+
+/* Area judul di header */
+.header-title {
+    margin-top: auto;
+    margin-bottom: auto; /* Vertikal tengah juga */
+}
+
+/* Link judul di header */
+.header-title a {
+    text-decoration: none; /* Hilangkan underline */
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* ========== NAVIGASI ========== */
+
+/* Kontainer navigasi */
+.nav {
+    background-color: black;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+/* Item menu navigasi */
+.nav-item {
+    display: inline-block; /* Menu ditampilkan sejajar horizontal */
+    margin-left: 20px;
+    height: 20px;
+}
+
+/* Link dalam menu navigasi */
+.nav-item a {
+    text-decoration: none;
+    color: cadetblue; /* Warna link */
+}
+
+/* ========== KONTEN ========== */
+
+/* Kontainer isi utama */
+.konten {
+    width: 80%;
+    margin: auto; /* Tengah halaman */
+}
+
+/* Judul utama dalam konten */
+.konten h1 {
+    color: darkolivegreen;
+    font-size: 35px;
+}
+
+/* Subjudul dalam konten */
+.konten h2 {
+    font-size: 22px;
+    color: darkgreen;
+}
+
+/* ========== TABEL ========== */
+
+/* Tabel secara umum */
+.tabel {
+    border-spacing: 4px; /* Jarak antar sel */
+}
+
+/* Header tabel */
+.tabel-header {
+    background-color: beige;
+}
+
+/* Sel header tabel */
+.tabel-header th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Baris isi tabel ganjil */
+.tabel-konten {
+    background-color: azure;
+}
+
+/* Baris isi tabel genap */
+.tabel-konten-genap {
+    background-color: aliceblue;
+}
+
+/* Sel isi tabel */
+.tabel-konten td {
+    padding: 10px;
+}
+
+/* Gambar di dalam sel tabel */
+td > img {
+    width: 100px;
+}
+
+/* Efek hover saat mouse diarahkan ke baris tabel */
+.tabel-konten:hover {
+    background-color: bisque;
+}
+
+/* ========== FORM ========== */
+
+/* Kontainer grup form */
+.form-grub {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Label pada form */
+.form-grub label {
+    display: block;
+    font-size: 20px;
+    color: rgb(135, 135, 135);
+}
+
+/* Input pada form */
+.form-grub input {
+    display: block;
+    margin-top: 10px;
+    width: 60%;
+}
+
+/* Textarea pada form */
+.form-grub textarea {
+    display: block;
+    margin-top: 10px;
+    height: 200px;
+    width: 60%;
+}
+
+/* ========== TOMBOL ========== */
+
+/* Tampilan tombol kirim/form */
+.btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: darkgreen;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Hover efek untuk tombol */
+.btn:hover {
+    background-color: black;
+}
+
+/* Saat tombol ditekan */
+.btn:active {
+    background-color: pink;
+}

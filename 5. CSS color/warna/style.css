@@ -1,0 +1,64 @@
+/* =========================== */
+/*         COLOR DASAR         */
+/* =========================== */
+
+
+/* === FOREGROUND COLOR (warna teks) === */
+/* Terdapat 3 cara umum untuk memberi warna font: */
+
+/* 1. Dengan nama warna (color name) */
+h1 {
+    color: darkcyan; /* Warna teks h1 adalah darkcyan (biru kehijauan gelap) */
+}
+
+/* 2. Dengan hexadecimal color code */
+h2 {
+    color: #ffffff; /* Warna teks h2 adalah putih */
+    
+    /*
+        Penjelasan kode HEX:
+        #RRGGBB
+        - RR = Red (Merah)
+        - GG = Green (Hijau)
+        - BB = Blue (Biru)
+        
+        Contoh:
+        #ffffff → putih (merah 255, hijau 255, biru 255)
+        #000000 → hitam (semua 0)
+    */
+}
+
+/* 3. Dengan nilai RGB (Red, Green, Blue) */
+p {
+    color: rgb(100, 100, 90); /* Warna teks p adalah kombinasi RGB dengan intensitas sedang */
+    
+    /*
+        Nilai RGB berkisar dari 0–255
+        - rgb(0, 0, 0) → hitam
+        - rgb(255, 255, 255) → putih
+        - rgb(255, 0, 0) → merah
+    */
+}
+
+
+/* === BACKGROUND COLOR (warna latar belakang) === */
+
+/* Memberi warna latar belakang untuk seluruh halaman */
+body {
+    background-color: #efefef; /* Abu muda */
+}
+
+/* Memberi warna latar belakang pada elemen h1 */
+h1 {
+    background-color: darkkhaki; /* Kuning kehijauan lembut */
+}
+
+/* Warna latar belakang untuk h2 */
+h2 {
+    background-color: darkseagreen; /* Hijau lembut */
+}
+
+/* Warna latar belakang untuk paragraf */
+p {
+    background-color: rgb(104, 228, 236); /* Biru muda cerah (kombinasi RGB) */
+}

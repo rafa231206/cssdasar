@@ -1,0 +1,60 @@
+/* Mengatur font dasar dan box-sizing untuk semua elemen */
+* {
+  font-family: Tahoma; /* Font default: Tahoma */
+  box-sizing: border-box; /* Supaya padding dan border tidak menambah ukuran elemen */
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  background-color: burlywood; /* Warna latar header */
+  position: fixed; /* Header tetap di atas saat discroll */
+  top: 0px; /* Menempel ke bagian atas browser */
+  left: 0px; /* Menempel ke kiri */
+  width: 100%; /* Lebar penuh */
+  padding: 10px; /* Ruang dalam di semua sisi */
+  height: 100px; /* Tinggi tetap */
+  z-index: 2; /* Di atas container (karena z-index lebih tinggi) */
+}
+
+/* Mengatur margin kiri untuk teks h1 dalam header */
+.header h1 {
+  margin-left: 50px; /* Geser teks ke kanan */
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+  z-index: 1; /* Di bawah header */
+  position: relative; /* Supaya bisa digeser ke bawah */
+  top: 100px; /* Memberi jarak dari header tetap */
+  max-width: 700px; /* Batas maksimum lebar konten */
+  margin: 0px auto 0px auto; /* Tengah secara horizontal */
+}
+
+/* Ukuran judul h2 di dalam container */
+.container h2 {
+  font-size: 18px;
+}
+
+/* ================= KONTEN UTAMA ================= */
+
+/* Kolom konten utama */
+.kolom-konten {
+  width: 500px; /* Lebar konten utama */
+  float: left; /* Mengatur agar berada di kiri */
+}
+
+/* Kolom menu samping */
+.kolom-menu {
+  background-color: aquamarine; /* Warna latar menu */
+  float: left; /* Ditempatkan di samping konten */
+  width: 190px; /* Lebar kolom menu */
+  margin-left: 10px; /* Jarak dari konten utama */
+  padding: 10px; /* Ruang dalam menu */
+}
+
+/* Menghilangkan bullet/angka pada list menu */
+.kolom-menu ul {
+  list-style-type: none;
+}

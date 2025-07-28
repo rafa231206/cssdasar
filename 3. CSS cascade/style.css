@@ -1,0 +1,50 @@
+/* === UNIVERSAL SELECTOR === */
+/* Semua elemen menggunakan font Arial */
+* {
+    font-family: Arial;
+}
+
+/* === LAST RULE WINS === */
+/* Kedua aturan di bawah berlaku untuk elemen <i> */
+/* Yang terakhir akan menang jika tidak ada spesifik yang lebih kuat */
+i {
+    color: green; /* Ini akan ditimpa oleh baris di bawahnya */
+}
+i {
+    color: red;   /* Ini yang akan digunakan karena ditulis terakhir */
+}
+
+/* === SPESIFISITAS DAN !IMPORTANT === */
+
+/* Selector biasa untuk <b>, warnanya pink */
+b {
+    color: pink;
+}
+
+/* Selector lebih spesifik: <b> yang ada di dalam <p>, warnanya brown dan pakai !important */
+p b {
+    color: brown !important; /* Ini akan menang karena menggunakan !important */
+}
+
+/* Walaupun ada aturan lagi di bawah, tidak akan menimpa aturan di atas karena !important */
+p b {
+    color: blue; /* Ini diabaikan karena kalah oleh !important */
+}
+
+/* Namun, aturan lain yang tidak konflik tetap bisa ditambahkan */
+p b {
+    font-size: 150%; /* Ukuran font tetap diterapkan karena tidak bertentangan */
+}
+
+/* === STUDI KASUS: SPESIFISITAS ID vs SELECTOR UMUM === */
+
+/* Semua paragraf memiliki ukuran font 100% */
+p {
+    font-size: 100%;
+}
+
+/* Paragraf dengan ID #pendahuluan akan punya ukuran font 75% */
+/* Karena selector dengan ID (#) lebih spesifik daripada selector tag saja (p) */
+p#pendahuluan {
+    font-size: 75%;
+}
